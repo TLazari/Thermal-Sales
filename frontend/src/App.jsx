@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
 import NotFound from './pages/NotFound';
 import Layout from './components/Layout';
@@ -12,9 +13,10 @@ export default function App() {
       <AuthProvider>
         <Routes>
           <Route path="/" element={<Navigate to="/login" replace />} />
-          <Route element={<Layout />}> 
+          <Route element={<Layout />}>
             <Route path="/login" element={<LoginPage />} />
-            <Route element={<PrivateRoute />}> 
+            <Route path="/register" element={<RegisterPage />} />
+            <Route element={<PrivateRoute />}>
               <Route path="/dashboard" element={<DashboardPage />} />
             </Route>
           </Route>

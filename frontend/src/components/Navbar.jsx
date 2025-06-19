@@ -16,7 +16,10 @@ export default function Navbar() {
       {isAuthenticated ? (
         <button onClick={handleLogout} className="hover:underline">Sair</button>
       ) : (
-        <Link to="/login" className="hover:underline">Login</Link>
+        <>
+          <Link to="/login" className="hover:underline">Login</Link>
+          <Link to="/register" className="hover:underline">Cadastrar</Link>
+        </>
       )}
     </nav>
   );

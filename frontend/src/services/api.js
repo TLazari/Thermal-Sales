@@ -22,4 +22,9 @@ export const login = async (email, password) => {
   return response.data;
 };
 
+export const registerUser = async (email, password) => {
+  const response = await api.post('/api/register', { email, password });
+  return response.data;
+};
+
 export default api;
