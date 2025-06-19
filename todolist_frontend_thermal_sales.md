@@ -1,111 +1,142 @@
-# 📋 To-Do List de Implementação Front-end — *Thermal Sales*
+# ✅ Thermal Sales - Front-End ToDo List
 
-## 🗂️ Estrutura atual
-
-A pasta `frontend/` contém apenas um esqueleto do projeto com **React + Tailwind**, composto por uma única página com `App.jsx` exibindo um título simples. Não há integração com o backend no momento.
-
----
-
-## ✅ Etapas de Implementação Detalhadas
-
-### 1. Implementar estrutura de páginas e rotas
-
-📌 **Objetivo:** Criar a navegação entre as telas principais da aplicação.
-
--**Tarefas:**
-- [x] Instalar `react-router-dom`
-- [x] Criar rotas para:
-  - `/login`
-  - `/dashboard`
-  - `/` (página inicial ou redirecionamento)
-- [x] Criar esboço das páginas:
-  - `LoginPage.jsx`
-  - `DashboardPage.jsx`
-  - `NotFound.jsx`
-- [x] Implementar `Router` principal em `App.jsx`
-
-🛠️ **Iniciar tarefa:** `Adicionar roteamento e layout básico`
+> 📌 Framework: React + Tailwind CSS  
+> 🧠 Propósito: Criar interface web para visualizar e interagir com o sistema Thermal Sales, incluindo análise de zonas de calor (heatmap), dashboards de métricas, login, e gerenciamento de sessões.
 
 ---
 
-### 2. Criar layout padrão e componentes base
+## 🚧 Estrutura Inicial do Projeto
 
-📌 **Objetivo:** Estabelecer uma estrutura visual reutilizável.
-
-**Tarefas:**
-- [x] Criar componente `Layout.jsx` com:
-  - Header com navegação
-  - Área central de conteúdo
-  - Rodapé (se necessário)
-- [x] Criar componentes reutilizáveis:
-  - `Navbar.jsx`
-  - `Sidebar.jsx` (opcional)
-  - `Card.jsx`, `Button.jsx`, etc.
-
-🛠️ **Iniciar tarefa:** `Adicionar roteamento e layout básico`
+- [ ] Configurar ambiente React com Tailwind
+- [ ] Criar estrutura de pastas padrão: `/pages`, `/components`, `/services`, `/hooks`, `/assets`, `/contexts`
 
 ---
 
-### 3. Integrar com o backend (FastAPI)
+## 🗺️ Roteamento e Navegação
 
-📌 **Objetivo:** Estabelecer comunicação entre front e back.
-
-**Tarefas:**
-- [x] Criar arquivo `api.js` ou `services/api.js`
-- [x] Configurar `axios` ou `fetch`
-- [x] Criar chamada GET para `/api/health` e exibir resposta no dashboard
-- [x] Preparar base para outras chamadas futuras
-
-🛠️ **Iniciar tarefa:** `Conectar front-end ao backend`
+- [ ] Instalar e configurar React Router
+- [ ] Criar rotas públicas e privadas
+- [ ] Criar middleware de autenticação de rota
+- [ ] Implementar estrutura de layout principal com Header, Sidebar e conteúdo dinâmico
 
 ---
 
-### 4. Aplicar estilos com Tailwind CSS
+## 🔐 Tela de Login
 
-📌 **Objetivo:** Melhorar a estética e responsividade.
-
-**Tarefas:**
-- [ ] Garantir configuração correta do Tailwind
-- [ ] Criar classes utilitárias para responsividade (mobile-first)
-- [ ] Criar layout base utilizando grid/flex
-
-🛠️ **Iniciar tarefa:** `Protótipo de visualização de heatmap`
+- [ ] Criar página de login com campos de e-mail e senha
+- [ ] Implementar requisição de login via API (`/api/login`)
+- [ ] Armazenar token JWT localmente (ex: localStorage)
+- [ ] Redirecionar para `/dashboard` após login bem-sucedido
+- [ ] Criar tratamento de erro (login inválido, expirado, etc.)
 
 ---
 
-### 5. Iniciar protótipo do Heatmap
+## 📊 Dashboard Principal
 
-📌 **Objetivo:** Iniciar visualização dos dados térmicos.
-
-**Tarefas:**
-- [ ] Pesquisar e escolher biblioteca:
-  - `heatmap.js`
-  - `leaflet.js` + plugins
-- [ ] Integrar biblioteca com React (ex: via useEffect)
-- [ ] Criar componente `HeatmapViewer.jsx`
-- [ ] Carregar dados simulados para testes
-
-🛠️ **Iniciar tarefa:** `Protótipo de visualização de heatmap`
+- [ ] Criar página `/dashboard`
+- [ ] Exibir KPIs principais:
+  - [ ] Total de visitantes
+  - [ ] Tempo médio por zona
+  - [ ] Taxa de conversão por zona
+- [ ] Criar cards de estatísticas usando Tailwind
+- [ ] Adicionar gráficos com biblioteca (ex: Chart.js, Recharts)
 
 ---
 
-### 6. Configurar testes e integração contínua (CI)
+## 🔥 Heatmap
 
-📌 **Objetivo:** Garantir qualidade e confiabilidade.
-
-**Tarefas:**
-- [ ] Instalar `Jest` e/ou `React Testing Library`
-- [ ] Criar testes para:
-  - Componentes (ex: botão, layout)
-  - Rotas
-  - Requisições à API (mockadas)
-- [ ] Criar workflow em `.github/workflows/frontend-tests.yml`
-- [ ] Executar testes em cada `push` ou `pull request`
-
-🛠️ **Iniciar tarefa:** `Incluir testes para o front-end`
+- [ ] Criar página `/heatmap`
+- [ ] Implementar componente de mapa da loja
+- [ ] Renderizar zonas com gradientes coloridos (quente → frio)
+- [ ] Capturar dados da API (`/api/heatmap`)
+- [ ] Permitir filtragem por:
+  - [ ] Período (data/hora)
+  - [ ] Região/zona
+- [ ] Suporte a múltiplos layouts de loja (ex: loja A, loja B)
+- [ ] Adicionar tooltip ao passar o mouse nas zonas
 
 ---
 
-## 🔄 Próximos passos
+## 🕵️ Histórico e Playback
 
-Com essas tarefas concluídas, o front-end estará preparado para evoluir rumo a um **dashboard funcional de análise de calor**, facilitando a integração com o backend FastAPI e permitindo análise visual eficiente de zonas quentes e frias da loja.
+- [ ] Criar página `/replay`
+- [ ] Adicionar controle de timeline para reprodução de movimento
+- [ ] Mostrar trajetória de clientes ao longo do tempo
+- [ ] Suporte a pausa, avanço rápido, voltar
+
+---
+
+## 📂 Gestão de Layouts da Loja
+
+- [ ] Criar página `/layouts`
+- [ ] Listar todos os layouts cadastrados
+- [ ] Permitir upload de novo layout (imagem/planta da loja)
+- [ ] Associar zonas com coordenadas (com ferramenta de marcação)
+- [ ] Permitir edição de zonas e nomes
+
+---
+
+## 👤 Gestão de Usuários (Admin)
+
+- [ ] Criar página `/usuarios`
+- [ ] Listar usuários cadastrados
+- [ ] Criar, editar e remover usuários
+- [ ] Definir tipo de usuário (admin, comum)
+- [ ] Exibir status (ativo/inativo)
+
+---
+
+## ⚙️ Configurações
+
+- [ ] Criar página `/configuracoes`
+- [ ] Troca de senha
+- [ ] Preferências de idioma (português/inglês)
+- [ ] Tema escuro/claro
+- [ ] WebSocket toggle
+
+---
+
+## 🛠️ Integração com Backend
+
+- [ ] Criar serviço `/services/api.js` usando Axios
+- [ ] Criar hooks personalizados para consumo de endpoints
+- [ ] Validar token em cada requisição
+- [ ] Atualizar token expirado automaticamente (refresh)
+
+---
+
+## 🧪 Testes
+
+- [ ] Instalar e configurar Jest + React Testing Library
+- [ ] Criar testes unitários para componentes principais
+- [ ] Criar testes de integração (mock da API)
+
+---
+
+## 🧼 UI/UX e Acessibilidade
+
+- [ ] Adotar design responsivo
+- [ ] Navegação por teclado (tabindex)
+- [ ] Contraste de cores acessível
+- [ ] Carregamento com `skeletons` ou spinners
+- [ ] Feedback visual para ações (toast de sucesso/erro)
+
+---
+
+## 🧩 Extras e Futuro
+
+- [ ] Internacionalização com i18n
+- [ ] PWA: tornar app instalável
+- [ ] Exportação de relatórios (PDF/CSV)
+- [ ] Integração com sistema de alarme em tempo real
+
+---
+
+## 📌 Observações
+
+- Todas requisições devem conter token JWT no cabeçalho
+- Usar loading global durante chamadas assíncronas longas
+- Priorizar modularização e reuso de componentes
+
+---
+
