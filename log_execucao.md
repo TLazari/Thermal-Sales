@@ -18,3 +18,5 @@ Arquivos alterados: backend/main.py, backend/tests/test_auth.py, todolist_fronte
 
 ✅ Tarefa executada: Simplificar tela de cadastro e criar conta de teste
 Arquivos alterados: backend/main.py, frontend/src/pages/RegisterPage.jsx, README.md
+✅ Tarefa executada: Exibir KPIs principais no dashboard
+Arquivos alterados: backend/main.py, backend/tests/test_kpis.py, frontend/src/services/api.js, frontend/src/pages/DashboardPage.jsx, todolist_frontend_thermal_sales.md

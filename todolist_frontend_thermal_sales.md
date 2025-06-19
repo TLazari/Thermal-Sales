@@ -34,10 +34,10 @@
 ## 📊 Dashboard Principal
 
 - [x] Criar página `/dashboard`
-- [ ] Exibir KPIs principais:
-  - [ ] Total de visitantes
-  - [ ] Tempo médio por zona
-  - [ ] Taxa de conversão por zona
+- [x] Exibir KPIs principais:
+  - [x] Total de visitantes
+  - [x] Tempo médio por zona
+  - [x] Taxa de conversão por zona
 - [ ] Criar cards de estatísticas usando Tailwind
 - [ ] Adicionar gráficos com biblioteca (ex: Chart.js, Recharts)
 
