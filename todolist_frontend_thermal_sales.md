@@ -138,5 +138,3 @@
 - Usar loading global durante chamadas assíncronas longas
 - Priorizar modularização e reuso de componentes
 
----
-
