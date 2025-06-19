@@ -13,16 +13,16 @@ A pasta `frontend/` contém apenas um esqueleto do projeto com **React + Tailwin
 📌 **Objetivo:** Criar a navegação entre as telas principais da aplicação.
 
 **Tarefas:**
-- [ ] Instalar `react-router-dom`
-- [ ] Criar rotas para:
+- [x] Instalar `react-router-dom`
+- [x] Criar rotas para:
   - `/login`
   - `/dashboard`
   - `/` (página inicial ou redirecionamento)
-- [ ] Criar esboço das páginas:
+- [x] Criar esboço das páginas:
   - `LoginPage.jsx`
   - `DashboardPage.jsx`
   - `NotFound.jsx`
-- [ ] Implementar `Router` principal em `App.jsx`
+- [x] Implementar `Router` principal em `App.jsx`
 
 🛠️ **Iniciar tarefa:** `Adicionar roteamento e layout básico`
 
