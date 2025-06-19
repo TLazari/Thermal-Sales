@@ -33,11 +33,11 @@ A pasta `frontend/` contém apenas um esqueleto do projeto com **React + Tailwin
 📌 **Objetivo:** Estabelecer uma estrutura visual reutilizável.
 
 **Tarefas:**
-- [ ] Criar componente `Layout.jsx` com:
+- [x] Criar componente `Layout.jsx` com:
   - Header com navegação
   - Área central de conteúdo
   - Rodapé (se necessário)
-- [ ] Criar componentes reutilizáveis:
+- [x] Criar componentes reutilizáveis:
   - `Navbar.jsx`
   - `Sidebar.jsx` (opcional)
   - `Card.jsx`, `Button.jsx`, etc.
