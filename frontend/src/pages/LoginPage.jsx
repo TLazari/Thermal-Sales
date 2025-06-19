@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import { login } from '../services/api';
@@ -51,6 +51,12 @@ export default function LoginPage() {
             <Button type="submit">Entrar</Button>
           </div>
         </form>
+        <p className="text-center text-sm mt-4">
+          Ainda não possui conta?{' '}
+          <Link to="/register" className="text-blue-600 hover:underline">
+            Cadastrar
+          </Link>
+        </p>
       </Card>
     </div>
   );

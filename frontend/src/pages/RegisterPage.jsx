@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import { registerUser } from '../services/api';
@@ -13,6 +13,8 @@ export default function RegisterPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(null);
+    setSuccess(false);
     try {
       await registerUser(email, password);
       setSuccess(true);
@@ -53,6 +55,12 @@ export default function RegisterPage() {
             <Button type="submit">Registrar</Button>
           </div>
         </form>
+        <p className="text-center text-sm mt-4">
+          Já possui conta?{' '}
+          <Link to="/login" className="text-blue-600 hover:underline">
+            Fazer login
+          </Link>
+        </p>
       </Card>
     </div>
   );

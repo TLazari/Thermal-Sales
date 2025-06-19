@@ -12,3 +12,4 @@ Arquivos alterados: todolist_frontend_thermal_sales.md
 Arquivos alterados: frontend/src/App.jsx, frontend/src/components/PrivateRoute.jsx, frontend/src/contexts/AuthContext.jsx, frontend/src/pages/LoginPage.jsx, frontend/src/components/Navbar.jsx, frontend/src/services/api.js, todolist_frontend_thermal_sales.md
 ✅ Tarefa executada: Criar página de cadastro de usuário
 Arquivos alterados: frontend/src/App.jsx, frontend/src/components/Navbar.jsx, frontend/src/pages/RegisterPage.jsx, frontend/src/services/api.js
+✅ Tarefa executada: Ajustar link de cadastro e aprimorar tela de registro
