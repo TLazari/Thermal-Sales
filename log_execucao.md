@@ -16,3 +16,5 @@ Arquivos alterados: frontend/src/App.jsx, frontend/src/components/Navbar.jsx, fr
 ✅ Tarefa executada: Implementar rotas de registro e login no backend e marcar tarefa do dashboard como concluída
 Arquivos alterados: backend/main.py, backend/tests/test_auth.py, todolist_frontend_thermal_sales.md
 
+✅ Tarefa executada: Simplificar tela de cadastro e criar conta de teste
+Arquivos alterados: backend/main.py, frontend/src/pages/RegisterPage.jsx, README.md

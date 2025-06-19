@@ -8,7 +8,7 @@ class Credentials(BaseModel):
     email: str
     password: str
 
-users = {}
+users = {"demo@example.com": "demo"}
 
 app.add_middleware(
     CORSMiddleware,

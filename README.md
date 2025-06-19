@@ -34,3 +34,10 @@ npm run dev
 
 
 The frontend will start on http://localhost:3000.
+
+### Demo Credentials
+
+A default user is available for testing:
+
+- **Email:** `demo@example.com`
+- **Password:** `demo`
