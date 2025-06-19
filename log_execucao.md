@@ -20,3 +20,5 @@ Arquivos alterados: backend/main.py, backend/tests/test_auth.py, todolist_fronte
 Arquivos alterados: backend/main.py, frontend/src/pages/RegisterPage.jsx, README.md
 ✅ Tarefa executada: Exibir KPIs principais no dashboard
 Arquivos alterados: backend/main.py, backend/tests/test_kpis.py, frontend/src/services/api.js, frontend/src/pages/DashboardPage.jsx, todolist_frontend_thermal_sales.md
+✅ Tarefa executada: Criar cards de KPIs e adicionar gráficos no dashboard
+Arquivos alterados: frontend/package.json, frontend/package-lock.json, frontend/src/components/StatsCard.jsx, frontend/src/pages/DashboardPage.jsx, todolist_frontend_thermal_sales.md

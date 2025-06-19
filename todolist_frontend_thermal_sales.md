@@ -38,8 +38,8 @@
   - [x] Total de visitantes
   - [x] Tempo médio por zona
   - [x] Taxa de conversão por zona
-- [ ] Criar cards de estatísticas usando Tailwind
-- [ ] Adicionar gráficos com biblioteca (ex: Chart.js, Recharts)
+ - [x] Criar cards de estatísticas usando Tailwind
+ - [x] Adicionar gráficos com biblioteca (ex: Chart.js, Recharts)
 
 ---
 
