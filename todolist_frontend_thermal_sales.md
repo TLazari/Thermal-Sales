@@ -51,10 +51,10 @@ A pasta `frontend/` contém apenas um esqueleto do projeto com **React + Tailwin
 📌 **Objetivo:** Estabelecer comunicação entre front e back.
 
 **Tarefas:**
-- [ ] Criar arquivo `api.js` ou `services/api.js`
-- [ ] Configurar `axios` ou `fetch`
-- [ ] Criar chamada GET para `/api/health` e exibir resposta no dashboard
-- [ ] Preparar base para outras chamadas futuras
+- [x] Criar arquivo `api.js` ou `services/api.js`
+- [x] Configurar `axios` ou `fetch`
+- [x] Criar chamada GET para `/api/health` e exibir resposta no dashboard
+- [x] Preparar base para outras chamadas futuras
 
 🛠️ **Iniciar tarefa:** `Conectar front-end ao backend`
 
