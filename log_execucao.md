@@ -13,3 +13,6 @@ Arquivos alterados: frontend/src/App.jsx, frontend/src/components/PrivateRoute.j
 ✅ Tarefa executada: Criar página de cadastro de usuário
 Arquivos alterados: frontend/src/App.jsx, frontend/src/components/Navbar.jsx, frontend/src/pages/RegisterPage.jsx, frontend/src/services/api.js
 ✅ Tarefa executada: Ajustar link de cadastro e aprimorar tela de registro
+✅ Tarefa executada: Implementar rotas de registro e login no backend e marcar tarefa do dashboard como concluída
+Arquivos alterados: backend/main.py, backend/tests/test_auth.py, todolist_frontend_thermal_sales.md
+

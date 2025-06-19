@@ -33,7 +33,7 @@
 
 ## 📊 Dashboard Principal
 
-- [ ] Criar página `/dashboard`
+- [x] Criar página `/dashboard`
 - [ ] Exibir KPIs principais:
   - [ ] Total de visitantes
   - [ ] Tempo médio por zona
