@@ -37,3 +37,21 @@ async def login(creds: Credentials):
     if users.get(creds.email) != creds.password:
         raise HTTPException(status_code=401, detail="Invalid credentials")
     return {"token": "fake-jwt-token"}
+
+
+@app.get("/api/kpis")
+async def get_kpis():
+    """Return sample KPI metrics for the dashboard."""
+    return {
+        "total_visitors": 1500,
+        "avg_time_per_zone": {
+            "entrada": 2.5,
+            "corredor": 4.2,
+            "caixa": 1.1,
+        },
+        "conversion_rate": {
+            "entrada": 0.05,
+            "corredor": 0.15,
+            "caixa": 0.3,
+        },
+    }

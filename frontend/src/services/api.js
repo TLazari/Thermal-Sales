@@ -27,4 +27,9 @@ export const registerUser = async (email, password) => {
   return response.data;
 };
 
+export const getKpis = async () => {
+  const response = await api.get('/api/kpis');
+  return response.data;
+};
+
 export default api;
