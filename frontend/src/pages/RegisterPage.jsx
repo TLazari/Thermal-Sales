@@ -1,34 +1,30 @@
 import { useState } from 'react';
-import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 import Card from '../components/Card';
-import { login } from '../services/api';
-import { useAuth } from '../contexts/AuthContext';
+import { registerUser } from '../services/api';
 
-export default function LoginPage() {
+export default function RegisterPage() {
   const navigate = useNavigate();
-  const location = useLocation();
-  const { login: loginContext } = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(null);
     try {
-      const data = await login(email, password);
-      loginContext(data.token);
-      const redirect = location.state?.from?.pathname || '/dashboard';
-      navigate(redirect, { replace: true });
+      await registerUser(email, password);
+      navigate('/login');
     } catch (err) {
-      setError('Credenciais inválidas');
+      setError('Erro ao registrar');
     }
   };
 
   return (
     <div className="flex justify-center items-center h-full">
       <Card>
-        <h2 className="text-xl font-semibold text-center mb-4">Login</h2>
+        <h2 className="text-xl font-semibold text-center mb-4">Cadastro</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           {error && <p className="text-red-600 text-sm text-center">{error}</p>}
           <input
@@ -48,13 +44,13 @@ export default function LoginPage() {
             required
           />
           <div className="text-center">
-            <Button type="submit">Entrar</Button>
+            <Button type="submit">Registrar</Button>
           </div>
         </form>
         <p className="text-center text-sm mt-4">
-          Ainda não possui conta?{' '}
-          <Link to="/register" className="text-blue-600 hover:underline">
-            Cadastrar
+          Já possui conta?{' '}
+          <Link to="/login" className="text-blue-600 hover:underline">
+            Fazer login
           </Link>
         </p>
       </Card>

@@ -7,33 +7,33 @@
 
 ## 🚧 Estrutura Inicial do Projeto
 
-- [ ] Configurar ambiente React com Tailwind
-- [ ] Criar estrutura de pastas padrão: `/pages`, `/components`, `/services`, `/hooks`, `/assets`, `/contexts`
+- [x] Configurar ambiente React com Tailwind
+- [x] Criar estrutura de pastas padrão: `/pages`, `/components`, `/services`, `/hooks`, `/assets`, `/contexts`
 
 ---
 
 ## 🗺️ Roteamento e Navegação
 
-- [ ] Instalar e configurar React Router
-- [ ] Criar rotas públicas e privadas
-- [ ] Criar middleware de autenticação de rota
-- [ ] Implementar estrutura de layout principal com Header, Sidebar e conteúdo dinâmico
+- [x] Instalar e configurar React Router
+- [x] Criar rotas públicas e privadas
+- [x] Criar middleware de autenticação de rota
+- [x] Implementar estrutura de layout principal com Header, Sidebar e conteúdo dinâmico
 
 ---
 
 ## 🔐 Tela de Login
 
-- [ ] Criar página de login com campos de e-mail e senha
-- [ ] Implementar requisição de login via API (`/api/login`)
-- [ ] Armazenar token JWT localmente (ex: localStorage)
-- [ ] Redirecionar para `/dashboard` após login bem-sucedido
-- [ ] Criar tratamento de erro (login inválido, expirado, etc.)
+- [x] Criar página de login com campos de e-mail e senha
+- [x] Implementar requisição de login via API (`/api/login`)
+- [x] Armazenar token JWT localmente (ex: localStorage)
+- [x] Redirecionar para `/dashboard` após login bem-sucedido
+- [x] Criar tratamento de erro (login inválido, expirado, etc.)
 
 ---
 
 ## 📊 Dashboard Principal
 
-- [ ] Criar página `/dashboard`
+- [x] Criar página `/dashboard`
 - [ ] Exibir KPIs principais:
   - [ ] Total de visitantes
   - [ ] Tempo médio por zona
@@ -137,6 +137,4 @@
 - Todas requisições devem conter token JWT no cabeçalho
 - Usar loading global durante chamadas assíncronas longas
 - Priorizar modularização e reuso de componentes
-
----
 
